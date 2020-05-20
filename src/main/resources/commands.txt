@@ -1,0 +1,17 @@
+create-account antony
+create-account carl
+create-account mey
+create-account judy
+
+transaction master antony "add funds" 1000.00
+transaction master carl "add funds" 1000.00
+transaction master mey "add funds" 1000.00
+transaction master judy "add funds" 1000.00
+
+transaction antony mey "payment for services" 100.00
+transaction antony judy "payment for services" 100.00
+transaction antony carl "payment for services" 100.00
+transaction carl mey "payment for services" 100.00
+
+get-balance antony
+get-balance carl
